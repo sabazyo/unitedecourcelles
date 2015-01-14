@@ -45,6 +45,9 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 | shown, which includes a detailed stack trace during debug.
 |
 */
+App::error(function(MethodNotAllowedHttpException $e){
+    return Response::view('errors', ['error' => 405], 405);
+});
 
 App::error(function(Exception $exception, $code)
 {

@@ -3,7 +3,7 @@
 class AdminSectionsController extends BaseAdminController {
 
 	public function index() {
-		
+
 		$sections = Sections::all();
 		$this->layout->title = 'Sections';
 		$this->layout->ajaxs = ['sections'];
@@ -16,7 +16,7 @@ class AdminSectionsController extends BaseAdminController {
 		return '';
 	}
 
-	
+
 	public function edit($id)
 	{
 		//

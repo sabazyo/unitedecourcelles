@@ -102,9 +102,9 @@
 	</div>
 	<!-- /#wrapper -->
 	<!-- jQuery Version 1.11.0 -->
-	{{ HTML::script('./assets/vendor/jquery/jquery-2.1.0.min.js') }}
+	{{ HTML::script('assets/vendor/jquery/jquery-2.1.0.min.js') }}
 	<!-- Bootstrap Core JavaScript -->
-	{{ HTML::script('./assets/vendor/bootstrap/js/bootstrap.min.js') }}
+	{{ HTML::script('assets/vendor/bootstrap/js/bootstrap.min.js') }}
 	
 	@if(isset($ajaxs))
 		@foreach ($ajaxs as $ajax)
